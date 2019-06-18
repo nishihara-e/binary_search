@@ -12,13 +12,13 @@ int main(){
     scanf("%d", &A[i]);
     }
   lb=0;
-  ub=n;
-  int m=(lb+ub)/2
+  ub=100000;
+  int m=(lb+ub)/2;
   while(ub-lb>0){
   if(A[m]>k){
     m=m/2;
   }
-  elif(A[m]<k){
+  else if(A[m]<k){
     m=m+m/2;
   }
   else{
