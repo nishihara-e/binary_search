@@ -10,6 +10,14 @@ int main(){
   scanf("%d%d", &n, &k);
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
+  lb=0;
+  ub=n;
+  int m=(lb+ub)/2
+  if(A[m]>k){
+    m=m/2;
+  }
+  elif()
+  
   }
 
 
