@@ -12,19 +12,16 @@ int main(){
     scanf("%d", &A[i]);
     }
   lb=0;
-  ub=100000;
-  int m=(lb+ub)/2;
+  ub=n;
   while(ub-lb>0){
-  if(A[m]>k){
-    m=m/2;
-  }
-  else if(A[m]<k){
-    m=m+m/2;
-  }
-  else{
-    ub=lb=m;
-  }
+   int m=(lb+ub)/2;
+    if(A[m]>=k){
+    ub=m;
+    }
+    else{
+    lb=m+1;
+    }
    }
-   printf("%d¥n",ub);
-   return 0;
+  printf("%d¥n", ub);
+  return 0;
   }
