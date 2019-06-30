@@ -30,7 +30,7 @@ int main(){
   }
   
   lb=0;
-  ub=10000;
+  ub=1000000000;
   while(ub-lb>1){
       int m=(lb+ub)/2;
       if(p(m)==1){

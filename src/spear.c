@@ -20,7 +20,7 @@ int main(){
     scanf("%d", &A[i]);
   }
 
-  ub=10000;
+  ub=1000000001;
   int max=A[0];
   for(i = 1; i < n; i++){
       if(A[i]>max){max=A[i];}
